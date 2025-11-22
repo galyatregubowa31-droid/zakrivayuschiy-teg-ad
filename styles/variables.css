@@ -1,1 +1,34 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
+:root {
+  --font-main: "Inter-Variable", Arial, sans-serif;
+  --font-accent: "PressStart2P", "Courier New", monospace;
+  --weight-text: 400;
+  --weight-title: 700;
+  --text-color: #000;
+  --bg-color: #fff;
+  --accent-red: #f00;
+  --heart-contour: #000;
+  --font-size-main: 18px;
+  --header-width: clamp(375px, 50vw, 700px);
+  --gap-cards: 50px;
+  --gap-cards-mobile: 25px;
+
+  --page-bg: repeating-linear-gradient(
+        to right,
+        #d3d3d3 0px,
+        #d3d3d3 2px,
+        transparent 2px,
+        transparent 4px
+      ),
+      repeating-linear-gradient(
+        to bottom,
+        #d3d3d3 0px,
+        #d3d3d3 2px,
+        transparent 2px,
+        transparent 4px
+      ),
+      linear-gradient(180deg, #e7e7e7 0.01%, #1a1a1a 100%);
+
+  --button-shadow: 2px 2px 0 0 var(--text-color);
+  --button-shadow-hover: 4px 4px 0 0 var(--text-color);
+}
