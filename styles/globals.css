@@ -3,51 +3,61 @@
 Вы можете изменять этот файл или дополнять. Но скорее всего, вам это не потребуется. */
 
 *,
-*::after,
-*::before {
+*::before,
+*::after {
   box-sizing: border-box;
+}
+
+html {
+  block-size: 100%;
 }
 
 body {
   margin: 0;
+  min-block-size: 100dvh;
+  font-family: var(--font-main);
+  font-size: var(--font-size-main);
+  font-variation-settings: "wght" var(--weight-text);
+  background: var(--page-bg) center/cover fixed;
+  color: var(--text-color);
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-ul,
-ol,
-li {
+h1, h2, h3, h4, p, ul, ol, li {
   margin: 0;
   padding: 0;
 }
 
+ul, ol {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+  background: none;
+  padding: 0;
+  border: none;
+}
+
 a {
   color: inherit;
-}
-
-button,
-input {
-  color: currentColor;
-  font-family: inherit;
-  font-size: inherit;
-}
-
-ul,
-ol {
-  list-style: none;
+  text-decoration: none;
 }
 
 .visually-hidden {
   position: absolute;
-  inline-size: 1px;
-  block-size: 1px;
-  overflow: hidden;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
   clip: rect(0 0 0 0);
-  clip-path: inset(50%);
+  overflow: hidden;
   white-space: nowrap;
 }
