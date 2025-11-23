@@ -115,14 +115,30 @@
   }
 }
 
-.filter-sepia { filter: sepia(1); }
-.filter-hue { filter: hue-rotate(180deg); }
-.filter-grayscale { filter: grayscale(50%); }
-.filter-invert { filter: invert(100%); }
-.filter-contrast { filter: contrast(200%); }
-.filter-blur { filter: blur(4px); }
-.filter-sat { filter: saturate(400%); }
-.filter-multiple { filter: sepia(1) hue-rotate(90deg); }
+.filter-sepia {
+  filter: sepia(1);
+}
+.filter-hue {
+  filter: hue-rotate(180deg);
+}
+.filter-grayscale {
+  filter: grayscale(50%);
+}
+.filter-invert {
+  filter: invert(100%);
+}
+.filter-contrast {
+  filter: contrast(200%);
+}
+.filter-blur {
+  filter: blur(4px);
+}
+.filter-sat {
+  filter: saturate(400%);
+}
+.filter-multiple {
+  filter: sepia(1) hue-rotate(90deg);
+}
 
 .card__text {
   display: flex;
