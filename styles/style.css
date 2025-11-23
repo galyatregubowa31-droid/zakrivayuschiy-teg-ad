@@ -49,6 +49,7 @@
 
 .header__title {
   font-size: var(--title-font-size)
+}
 
 .header__subtitle {
   font-size: clamp(0.875rem, 0.676rem + 0.85vw, 1.4375rem));
