@@ -6,13 +6,11 @@
   --weight-title: 700;
   --text-color: #000;
   --bg-color: #fff;
-  --accent-red: #f00;
   --heart-contour: #000;
   --font-size-main: 18px;
-  --header-width: clamp(375px, 50vw, 700px);
+  --header-width: clamp(min(100%, 375px), 50vw, 700px);
+  --title-font-size: clamp(3.063rem, 2.71rem + 1.5vw, 4.063rem);
   --gap-cards: 50px;
-  --gap-cards-mobile: 25px;
-
   --page-bg: repeating-linear-gradient(
         to right,
         #d3d3d3 0px,
@@ -27,8 +25,8 @@
         transparent 2px,
         transparent 4px
       ),
-      linear-gradient(180deg, #e7e7e7 0.01%, #1a1a1a 100%);
+      linear-gradient(to bottom, #e7e7e7 0.01%, #1a1a1a 100%);
 
-  --button-shadow: 2px 2px 0 0 var(--text-color);
-  --button-shadow-hover: 4px 4px 0 0 var(--text-color);
+  --contour-col: #000;
+  --animation-col: #f00;
 }
